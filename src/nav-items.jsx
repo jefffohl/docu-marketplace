@@ -1,5 +1,6 @@
 import { HomeIcon, InfoIcon, TicketIcon, MessageSquareIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
+import Screenings from "./pages/Screenings.jsx";
 
 export const navItems = [
   {
@@ -18,7 +19,7 @@ export const navItems = [
     title: "Screenings",
     to: "/screenings",
     icon: <TicketIcon className="h-4 w-4" />,
-    page: <Index />, // Replace with Screenings component when created
+    page: <Screenings />,
   },
   {
     title: "Contact",

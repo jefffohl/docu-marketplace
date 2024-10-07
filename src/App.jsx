@@ -12,7 +12,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <BrowserRouter>
-        <div className="bg-black w-full">
+        <div className="bg-black w-full py-5"> {/* Added py-5 for 20px vertical padding */}
           <NavigationMenu className="container mx-auto">
             <NavigationMenuList className="flex justify-end">
               {navItems.map(({ title, to }) => (

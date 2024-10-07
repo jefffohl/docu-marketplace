@@ -21,10 +21,14 @@ const Index = () => {
             <div className="md:w-1/2 md:pl-8">
               <h2 className="text-4xl font-bold mb-4 text-blue-accent">Discover the Truth</h2>
               <p className="text-xl mb-6 text-green-accent">A groundbreaking documentary that uncovers the hidden stories behind our world's most pressing issues.</p>
-              <Button className="mr-4 bg-blue-accent hover:bg-blue-600">
-                <PlayCircle className="mr-2 h-4 w-4" /> Watch Trailer
-              </Button>
-              <Button variant="outline" className="border-green-accent text-green-accent hover:bg-green-accent hover:text-white">Learn More</Button>
+              <div className="flex space-x-4"> {/* Added flex container for buttons */}
+                <Button className="bg-blue-accent hover:bg-blue-600">
+                  <PlayCircle className="mr-2 h-4 w-4" /> Watch Trailer
+                </Button>
+                <Button variant="outline" className="border-green-accent text-green-accent hover:bg-green-accent hover:text-white">
+                  Learn More
+                </Button>
+              </div>
             </div>
           </div>
         </section>

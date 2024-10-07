@@ -12,11 +12,11 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <BrowserRouter>
-        <NavigationMenu className="bg-black text-white py-4">
+        <NavigationMenu className="bg-dark text-white py-4">
           <NavigationMenuList className="container mx-auto px-4 flex justify-end">
             {navItems.map(({ title, to }) => (
               <NavigationMenuItem key={to}>
-                <NavigationMenuLink className="px-4 py-2 hover:bg-gray-700 rounded" href={to}>
+                <NavigationMenuLink className="px-4 py-2 hover:bg-gray-800 rounded" href={to}>
                   {title}
                 </NavigationMenuLink>
               </NavigationMenuItem>
